@@ -1,5 +1,38 @@
-.col {
+.banner,
+h1 {
 	color: lavender;
 	background-color: orchid;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	padding: 5px;
+	font-size: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.item {
+	color: navy;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	flex-wrap: wrap;
+}
+
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: paleturquoise;
+	padding: 5px;
+	font-size: 2em;
+	justify-content: center;
+}
+
+.item {
+	background-color: turquoise;
+	padding: 5px;
+	margin: 5px;
+}
+
+@media screen (min-width: 768px) {
+
 }
