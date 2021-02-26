@@ -1,38 +1,106 @@
-.banner,
-h1 {
+.banner {
 	color: lavender;
-	background-color: orchid;
+	background-color: slateblue;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	padding: 5px;
-	font-size: 2em;
-	display: flex;
+	font-size: 1.5em;
+	display: block;
 	flex-wrap: wrap;
-	align-items: center;
-	margin: 0 auto;
-}
-
-.item {
-	color: navy;
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	flex-wrap: wrap;
-}
-
-.tabs {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	background-color: paleturquoise;
-	padding: 5px;
-	font-size: 2em;
+	align-content: center;
 	justify-content: center;
+	border-radius: 25px;
+	margin-bottom: 5px;
 }
 
-.item {
-	background-color: turquoise;
+.about {
+	color:darkslategray;
+	background-color:lavender;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	padding: 5px;
-	margin: 5px;
+	font-size: 1.5em;
+	display: block;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-radius: 25px;
+	margin-bottom: 5px;
+	transition:
 }
 
-@media screen (min-width: 768px) {
+.portfolio {
+	color: lavender;
+	background-color: darkslategray;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	padding: 5px;
+	font-size: 1.5em;
+	display: block;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-radius: 25px;
+	margin-bottom: 5px;
+}
+
+.contact {
+	color:darkslategray;
+	background-color:lavender;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	padding: 5px;
+	font-size: 1.5em;
+	display: block;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-radius: 25px;
+	margin-bottom: 5px;
+}
+
+h1,
+h2 {
+	display: flex;
+	justify-content: center;
+	text-decoration-line: underline;
+}
+
+.submenu:hover,
+h2:hover {
+	color: lightslategrey;
+}
+img {
+	width: 10px;
+}
+
+menu {
+	display: flex;
+}
+
+.submenu {
+	margin: auto;
+}
+
+p {
+	font-size: 1em;
+}
+
+/* tablet media query */
+
+@media 
+only screen and (min-width: 768px) {
+
+}
+
+/* desktop media query */
+
+@media
+only screen and (min-width: 992px) {
+
+.banner {
+	display: flex;
+	justify-content: left;
+}
+
+menu {
+	justify-content:space-between;
+	display: flex;
+	width: 768px;
+	flex-wrap: wrap;
+}
 
 }
