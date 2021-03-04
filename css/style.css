@@ -3,7 +3,7 @@
 	background-color: slateblue;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	padding: 5px;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	display: block;
 	flex-wrap: wrap;
 	align-content: center;
@@ -17,7 +17,7 @@
 	background-color:lavender;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	padding: 5px;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	display: block;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -31,7 +31,7 @@
 	background-color: darkslategray;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	padding: 5px;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	display: block;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -44,7 +44,7 @@
 	background-color:lavender;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	padding: 5px;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	display: block;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -76,7 +76,7 @@ menu {
 }
 
 p {
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 /* tablet media query */
