@@ -1,9 +1,9 @@
-const obj = {
-    length: 6,
-    area: function () {
-        return obj.length * obj.length;
-    }
+const main = document.querySelector('main');
+
+let sample = '';
+
+for (let i = 0; i < 5; i++) {
+    sample = sample + i;
 }
 
-console.log('obj area:');
-console.log(obj.area());
+console.log(sample);

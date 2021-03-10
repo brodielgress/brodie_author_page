@@ -2,13 +2,13 @@
 	color: lavender;
 	background-color: slateblue;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	padding: 5px;
+	padding: 10px;
 	font-size: 1.5rem;
 	display: block;
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: center;
-	border-radius: 25px;
+	border-radius: 5px;
 	margin-bottom: 5px;
 }
 
@@ -16,26 +16,25 @@
 	color:darkslategray;
 	background-color:lavender;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	padding: 5px;
+	padding: 10px;
 	font-size: 1.5rem;
 	display: block;
 	flex-wrap: wrap;
 	justify-content: center;
-	border-radius: 25px;
+	border-radius: 5px;
 	margin-bottom: 5px;
-	transition:
 }
 
 .portfolio {
 	color: lavender;
 	background-color: darkslategray;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	padding: 5px;
+	padding: 10px;
 	font-size: 1.5rem;
 	display: block;
 	flex-wrap: wrap;
 	justify-content: center;
-	border-radius: 25px;
+	border-radius: 5px;
 	margin-bottom: 5px;
 }
 
@@ -43,12 +42,12 @@
 	color:darkslategray;
 	background-color:lavender;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	padding: 5px;
+	padding: 10px;
 	font-size: 1.5rem;
 	display: block;
 	flex-wrap: wrap;
 	justify-content: center;
-	border-radius: 25px;
+	border-radius: 5px;
 	margin-bottom: 5px;
 }
 
@@ -83,6 +82,12 @@ menu {
 p {
 	font-size: 1rem;
 }
+
+input:required {
+	border-color: firebrick;
+}
+
+
 
 /* tablet media query */
 
