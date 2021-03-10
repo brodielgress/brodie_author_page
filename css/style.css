@@ -62,9 +62,14 @@ h2 {
 .submenu:hover,
 h2:hover {
 	color: lightslategrey;
+	cursor: url(hand.cur), pointer;
 }
-img {
-	width: 10px;
+
+.headshot {
+	display: flex;
+	width: 50vw;
+	border-radius: 5px;
+	margin: auto;
 }
 
 menu {
