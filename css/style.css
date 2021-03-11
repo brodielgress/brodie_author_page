@@ -48,10 +48,6 @@ h2 {
 		cursor: url(hand.cur), pointer;
 	}
 
-	.submenu:visited {
-		color: orchid;
-	}
-
 .headshot {
 	display: flex;
 	width: 50vw;
