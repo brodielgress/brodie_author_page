@@ -11,47 +11,69 @@
 <body>
 	<header class="banner">
 		<h1>BG</h1>
-		<menu>
-			<li class="submenu">About</li>
-			<li class="submenu">Portfolio</li>
-			<li class="submenu">Contact</li>
+		<menu id="mylinks">
+			<a href="#about" class="submenu">About</a>
+			<a href="#portfolio" class="submenu">Portfolio</a>
+			<a href="#contact" class="submenu">Contact</a>
 		</menu>
 	</header>
-	<div class="about">
-		<h2>About</h2>
-		<p>
-			<img class="headshot" src="img/bgheadshot.jpg" alt="A headshot picture of the featured author">
+	<div class="wrapper">
+		<div class="section" id="about">
+			<h2>About</h2>
+			<p>
+				<img class="headshot" src="img/bgheadshot.jpg" alt="A headshot picture of the featured author">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit nulla, convallis quis luctus sed, bibendum id dolor. 
+				Mauris non lectus ut nunc blandit egestas ut sit amet risus. Morbi accumsan quis tellus non porttitor. In eu dolor ullamcorper, 
+				vestibulum dui id, rhoncus elit. Vivamus ante nibh, vehicula quis tortor vitae, venenatis hendrerit quam. Pellentesque ac ipsum 
+				at tortor mollis auctor vel eu leo. Aenean interdum eros eu interdum gravida. Etiam tincidunt sed ligula id aliquam. Maecenas non 
+				viverra ipsum. Proin sodales nibh id est varius, eu gravida velit tincidunt. Mauris vel mi vulputate, pellentesque lorem a, gravida 
+				tortor. Ut ut molestie enim. Donec tincidunt, nunc id rutrum vehicula, ex magna molestie ex, a vehicula odio elit vitae turpis.
+				<br>
+				<br>
+				Suspendisse ultrices consequat facilisis. Nam et ante ipsum. Nam bibendum molestie eros a efficitur. Vestibulum egestas viverra blandit. 
+				Vestibulum fringilla convallis dui, vel scelerisque magna cursus eget. Fusce ut diam non velit lobortis tincidunt. Mauris mattis 
+				egestas ipsum, in varius ligula pulvinar vitae. Aliquam mollis tellus tempor, gravida leo vitae, lacinia enim. Quisque euismod est 
+				ipsum, at tincidunt odio aliquam rhoncus. Maecenas eget elit enim. Ut ac sodales magna. Aliquam scelerisque, quam eu mollis tristique, 
+				arcu odio bibendum quam, vitae rhoncus leo sem eget justo. Nullam condimentum, eros eu convallis luctus, ipsum purus vulputate urna, 
+				eu bibendum libero neque et ligula. Cras at sem id sem aliquet tincidunt sed ut neque. Praesent convallis ornare massa.
+				<br>
+				<br>
+				Nam ultrices elit sit amet faucibus imperdiet. Maecenas maximus turpis eget magna mattis euismod. Praesent iaculis quam eget nulla 
+				rutrum efficitur bibendum vel nisi. Nullam quis ipsum ullamcorper, pellentesque velit nec, convallis nisl. Etiam eu turpis tortor. 
+				Etiam dictum venenatis placerat. Praesent dapibus sollicitudin dui in bibendum. Maecenas lacinia eleifend magna, mattis scelerisque 
+				lacus euismod eu. Duis dapibus scelerisque libero sed rhoncus. </p>
+		</div>
+		<div class="section" id="portfolio"><h2>Portfolio</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit nulla, convallis quis luctus sed, bibendum id dolor. 
+				Mauris non lectus ut nunc blandit egestas ut sit amet risus. Morbi accumsan quis tellus non porttitor. In eu dolor ullamcorper, 
+				vestibulum dui id, rhoncus elit. Vivamus ante nibh, vehicula quis tortor vitae, venenatis hendrerit quam. Pellentesque ac ipsum 
+				at tortor mollis auctor vel eu leo. Aenean interdum eros eu interdum gravida. Etiam tincidunt sed ligula id aliquam. Maecenas non 
+				viverra ipsum. Proin sodales nibh id est varius, eu gravida velit tincidunt. Mauris vel mi vulputate, pellentesque lorem a, gravida 
+				tortor. Ut ut molestie enim. Donec tincidunt, nunc id rutrum vehicula, ex magna molestie ex, a vehicula odio elit vitae turpis.
+				<br>
+				<br>
+				Suspendisse ultrices consequat facilisis. Nam et ante ipsum. Nam bibendum molestie eros a efficitur. Vestibulum egestas viverra blandit. 
+				Vestibulum fringilla convallis dui, vel scelerisque magna cursus eget. Fusce ut diam non velit lobortis tincidunt. Mauris mattis 
+				egestas ipsum, in varius ligula pulvinar vitae. Aliquam mollis tellus tempor, gravida leo vitae, lacinia enim. Quisque euismod est 
+				ipsum, at tincidunt odio aliquam rhoncus. Maecenas eget elit enim. Ut ac sodales magna. Aliquam scelerisque, quam eu mollis tristique, 
+				arcu odio bibendum quam, vitae rhoncus leo sem eget justo. Nullam condimentum, eros eu convallis luctus, ipsum purus vulputate urna, 
+				eu bibendum libero neque et ligula. Cras at sem id sem aliquet tincidunt sed ut neque. Praesent convallis ornare massa.
+				<br>
+				<br>
+				Nam ultrices elit sit amet faucibus imperdiet. Maecenas maximus turpis eget magna mattis euismod. Praesent iaculis quam eget nulla 
+				rutrum efficitur bibendum vel nisi. Nullam quis ipsum ullamcorper, pellentesque velit nec, convallis nisl. Etiam eu turpis tortor. 
+				Etiam dictum venenatis placerat. Praesent dapibus sollicitudin dui in bibendum. Maecenas lacinia eleifend magna, mattis scelerisque 
+				lacus euismod eu. Duis dapibus scelerisque libero sed rhoncus. </p>
+		</div>
+		<footer class="section" id="contact"><h2>Contact</h2>
+			<label for="inquiry">How can I help you?</label><br>
+				<input type="text" id="text" size="100" required>
 			<br>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit nulla, convallis quis luctus sed, bibendum id dolor. 
-			Mauris non lectus ut nunc blandit egestas ut sit amet risus. Morbi accumsan quis tellus non porttitor. In eu dolor ullamcorper, 
-			vestibulum dui id, rhoncus elit. Vivamus ante nibh, vehicula quis tortor vitae, venenatis hendrerit quam. Pellentesque ac ipsum 
-			at tortor mollis auctor vel eu leo. Aenean interdum eros eu interdum gravida. Etiam tincidunt sed ligula id aliquam. Maecenas non 
-			viverra ipsum. Proin sodales nibh id est varius, eu gravida velit tincidunt. Mauris vel mi vulputate, pellentesque lorem a, gravida 
-			tortor. Ut ut molestie enim. Donec tincidunt, nunc id rutrum vehicula, ex magna molestie ex, a vehicula odio elit vitae turpis.
 			<br>
-			<br>
-			Suspendisse ultrices consequat facilisis. Nam et ante ipsum. Nam bibendum molestie eros a efficitur. Vestibulum egestas viverra blandit. 
-			Vestibulum fringilla convallis dui, vel scelerisque magna cursus eget. Fusce ut diam non velit lobortis tincidunt. Mauris mattis 
-			egestas ipsum, in varius ligula pulvinar vitae. Aliquam mollis tellus tempor, gravida leo vitae, lacinia enim. Quisque euismod est 
-			ipsum, at tincidunt odio aliquam rhoncus. Maecenas eget elit enim. Ut ac sodales magna. Aliquam scelerisque, quam eu mollis tristique, 
-			arcu odio bibendum quam, vitae rhoncus leo sem eget justo. Nullam condimentum, eros eu convallis luctus, ipsum purus vulputate urna, 
-			eu bibendum libero neque et ligula. Cras at sem id sem aliquet tincidunt sed ut neque. Praesent convallis ornare massa.
-			<br>
-			<br>
-			Nam ultrices elit sit amet faucibus imperdiet. Maecenas maximus turpis eget magna mattis euismod. Praesent iaculis quam eget nulla 
-			rutrum efficitur bibendum vel nisi. Nullam quis ipsum ullamcorper, pellentesque velit nec, convallis nisl. Etiam eu turpis tortor. 
-			Etiam dictum venenatis placerat. Praesent dapibus sollicitudin dui in bibendum. Maecenas lacinia eleifend magna, mattis scelerisque 
-			lacus euismod eu. Duis dapibus scelerisque libero sed rhoncus. </p>
+			<label for="email">Email:</label>
+				<input type="email" id="email" size="30" required>
+		</footer>
 	</div>
-	<div class="portfolio"><h2>Portfolio</h2></div>
-
-	<footer class="contact"><h2>Contact</h2>
-		<label for="inquiry">How can I help you?</label><br>
-			<input type="text" id="text" size="100" required>
-		<br>
-		<br>
-		<label for="email">Email:</label>
-			<input type="email" id="email" size="30" required>
-	</footer>
 </body>
 </html>

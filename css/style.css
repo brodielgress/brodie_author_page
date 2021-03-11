@@ -1,3 +1,9 @@
+/* Create a hamburger menu for the banner element for mobile */
+
+html {
+	scroll-behavior: smooth;
+}
+
 .banner {
 	color: lavender;
 	background-color: slateblue;
@@ -12,7 +18,7 @@
 	margin-bottom: 5px;
 }
 
-.about {
+.section {
 	color:darkslategray;
 	background-color:lavender;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,44 +31,26 @@
 	margin-bottom: 5px;
 }
 
-.portfolio {
-	color: lavender;
-	background-color: darkslategray;
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	padding: 10px;
-	font-size: 1.5rem;
-	display: block;
-	flex-wrap: wrap;
-	justify-content: center;
-	border-radius: 5px;
-	margin-bottom: 5px;
-}
 
-.contact {
-	color:darkslategray;
-	background-color:lavender;
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	padding: 10px;
-	font-size: 1.5rem;
-	display: block;
-	flex-wrap: wrap;
-	justify-content: center;
-	border-radius: 5px;
-	margin-bottom: 5px;
-}
-
-h1,
 h2 {
 	display: flex;
 	justify-content: center;
 	text-decoration-line: underline;
 }
 
-.submenu:hover,
-h2:hover {
-	color: lightslategrey;
-	cursor: url(hand.cur), pointer;
+.submenu {
+	color: lavender;
 }
+
+	.submenu:hover,
+	h2:hover {
+		color: lightslategrey;
+		cursor: url(hand.cur), pointer;
+	}
+
+	.submenu:visited {
+		color: orchid;
+	}
 
 .headshot {
 	display: flex;
@@ -80,7 +68,7 @@ menu {
 }
 
 p {
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 
 input:required {
@@ -92,25 +80,57 @@ input:required {
 /* tablet media query */
 
 @media 
-only screen and (min-width: 768px) {
+only screen and (min-width: 768px) and (max-width: 991px) {
 
 }
 
 /* desktop media query */
+/* Use display inline box to rearrange different div elements */
 
 @media
 only screen and (min-width: 992px) {
 
-.banner {
-	display: flex;
-	justify-content: left;
-}
+		body {
+			display: flex;
+		}
 
-menu {
-	justify-content:space-between;
-	display: flex;
-	width: 768px;
-	flex-wrap: wrap;
-}
+		.banner {
+			display: block;
+			flex-wrap: wrap;
+			align-content: left;
+			justify-content: left;
+			border-radius: 5px;
+			margin-bottom: 5px;
+			width: 20vw;
+			padding: 25px;
+		}
+
+		.headshot {
+			max-width: 25vw;
+			float: right;
+			margin: 10px;
+		}
+
+		menu {
+			justify-content: left;
+			display: flexbox;
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
+
+		.submenu {
+			margin: 5px;
+		}
+
+		.section {
+			max-width: 75vw;
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+
+
+		h1 {
+			justify-content: left;
+		}
 
 }
