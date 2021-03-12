@@ -1,0 +1,20 @@
+:root {
+    --primary-color: rgba(230, 230, 250, 0.85);
+    --overlay-color: rgba(106, 90, 205, 0.95);
+}
+
+.mylinks {
+    visibility: hidden;
+    z-index: -1;
+}
+
+.banner > .hamburger {
+    background-color:rgba(230, 230, 250, 0.85);
+    width: 50px;
+    height: 4px;
+}
+
+.banner > .toggler {
+    opacity: 0;
+    cursor: pointer;
+}

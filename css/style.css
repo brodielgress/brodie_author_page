@@ -4,33 +4,42 @@ html {
 	scroll-behavior: smooth;
 }
 
+:root {
+    --primary-color: rgba(230, 230, 250, 0.85);
+    --overlay-color: rgba(106, 90, 205, 0.95);
+}
+
 .banner {
-	color: lavender;
-	background-color: slateblue;
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	padding: 10px;
-	font-size: 1.5rem;
-	display: block;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
+    height: 15vh;
 	border-radius: 5px;
-	margin-bottom: 5px;
+    background-color: var(--overlay-color);
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+	align-content: center;
+}
+
+header > h1 {
+    font-size: 3rem;
+    text-decoration: underline;
 }
 
 .section {
-	color:darkslategray;
-	background-color:lavender;
+	color: var(--overlay-color);
+	background-color: var(--primary-color);
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	padding: 10px;
+	padding: 25px;
 	font-size: 1.5rem;
-	display: block;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: left;
+	text-align: left;
 	border-radius: 5px;
 	margin-bottom: 5px;
 }
-
 
 h2 {
 	display: flex;
@@ -38,29 +47,18 @@ h2 {
 	text-decoration-line: underline;
 }
 
-.submenu {
-	color: lavender;
+.section > h2:hover {
+	color:rgba(145, 131, 238, 0.95);
+	cursor: pointer;
+	transition: color 1s ease-in-out;
 }
-
-	.submenu:hover,
-	h2:hover {
-		color: lightslategrey;
-		cursor: url(hand.cur), pointer;
-	}
 
 .headshot {
 	display: flex;
 	width: 50vw;
 	border-radius: 5px;
 	margin: auto;
-}
-
-menu {
-	display: flex;
-}
-
-.submenu {
-	margin: auto;
+	padding: 10px;
 }
 
 p {
@@ -71,6 +69,35 @@ input:required {
 	border-color: firebrick;
 }
 
+.contactitems {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	align-content:space-between;
+}
+
+.btn {
+	display: inline-block;
+	border: none;
+	background:rgba(106, 90, 205, 0.95);
+	color: white;
+	padding: 0.75rem 1.5rem;
+	margin-top: 1rem;
+	transition: opacity 1s ease-in-out;
+	max-width: 30vw;
+	text-decoration: none;
+	text-align: center;
+	align-self: center;
+	border-radius: 10px;
+}
+
+.btn:hover {
+	opacity: 0.7;
+}
+
+.contactitems > li {
+	padding: 1rem;
+}
 
 
 /* tablet media query */
@@ -85,48 +112,5 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 @media
 only screen and (min-width: 992px) {
-
-		body {
-			display: flex;
-		}
-
-		.banner {
-			display: block;
-			flex-wrap: wrap;
-			align-content: left;
-			justify-content: left;
-			border-radius: 5px;
-			margin-bottom: 5px;
-			width: 20vw;
-			padding: 25px;
-		}
-
-		.headshot {
-			max-width: 25vw;
-			float: right;
-			margin: 10px;
-		}
-
-		menu {
-			justify-content: left;
-			display: flexbox;
-			flex-direction: column;
-			flex-wrap: wrap;
-		}
-
-		.submenu {
-			margin: 5px;
-		}
-
-		.section {
-			max-width: 75vw;
-			padding-left: 50px;
-			padding-right: 50px;
-		}
-
-
-		h1 {
-			justify-content: left;
-		}
 
 }
