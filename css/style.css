@@ -37,6 +37,12 @@ header > h1 {
 	font-size: 1.5rem;
 	display: flex;
 	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 1rem;
+	max-width: 80vw;
+	width: 100%;
+	overflow: hidden;
+	flex-direction: column;
 	align-items: left;
 	justify-content: left;
 	text-align: left;
@@ -44,24 +50,42 @@ header > h1 {
 	margin-bottom: 5px;
 }
 
-h2 > a {
+.accordion {
 	display: flex;
-	justify-content: center;
-	text-decoration-line: underline;
-	color: var(--overlay-color);
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 1rem;
+	max-width: 80vw;
+	width: 100%;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 2rem;
+	border: none;
+	background:rgba(106, 90, 205, 0.95);
+	color: white;
+	padding: 0.75rem 1.5rem;
+	transition: opacity 1s ease-in;
+	text-decoration: none;
+	text-align: center;
+	align-self: center;
+	border-radius: 5px;
 }
 
-.section > h2 > a:hover {
-	color: rgba(128, 116, 206, 0.95);
+.accordion:checked {
+	background-color:rgba(149, 90, 205, 0.95);
+}
+
+.accordion:hover {
+	opacity: 0.7;
 	cursor: pointer;
-	transition: color 1s ease-in-out;
 }
 
 .headshot {
 	display: flex;
 	width: 50vw;
+	max-width: 35vw;
+	width: 90%;
 	border-radius: 5px;
-	margin: auto;
+	margin: 0 auto;
 	padding: 10px;
 }
 
@@ -97,6 +121,7 @@ input:required {
 
 .btn:hover {
 	opacity: 0.7;
+	cursor: pointer;
 }
 
 .contactitems > li {
@@ -116,5 +141,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 @media
 only screen and (min-width: 992px) {
-	
+	.section.wrapper {
+		display: flex;
+		flex-direction: row;
+	}
 }

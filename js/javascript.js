@@ -1,10 +1,16 @@
-const main = document.querySelector('main');
+let acc = document.getElementsByClassName("accordion");
+let i;
 
-let sample = '';
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
 
-for (let i = 0; i < 5; i++) {
-    sample = sample + i;
+    let section = this.nextElementSibling;
+    if (section.style.display === "flex") {
+        section.style.display = "none";
+    } else {
+        section.style.display = "flex";
+    }
+
+    });
 }
-
-console.log(sample);
-
