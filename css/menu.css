@@ -3,18 +3,107 @@
     --overlay-color: rgba(106, 90, 205, 0.95);
 }
 
-.mylinks {
-    visibility: hidden;
-    z-index: -1;
+/* Show hamburger icon */
+#hamnav label {
+    width: 100%;
+    background: #000;
+    display: inline-block;
+    color: var(--primary-color);
+    background: var(--overlay-color);
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    padding: 10px;
+    position: sticky;
+    top: 0;
 }
 
-.banner > .hamburger {
-    background-color:rgba(230, 230, 250, 0.85);
-    width: 50px;
-    height: 4px;
+/* Hide Hamburger */
+#hamburger { 
+    display: none;
 }
 
-.banner > .toggler {
-    opacity: 0;
+#hamnav label:hover {
+    color: rgb(212, 184, 193);
     cursor: pointer;
+    transition: color 1s ease-in-out;
+}
+
+/* Horizontal Menu Items */
+#hamitems { 
+    display: flex;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#hamitems a {
+  width: 33%;
+  padding: 10px;
+  color: var(--overlay-color);
+  background: var(--primary-color);
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  background: var(--overlay-color);
+  color:var(--primary-color)
+}
+
+/* Break down menu items into vertical */
+#hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+/* Toggle Show/Hide Menu */
+#hamitems { display: none; }
+
+#hamnav input:checked ~ #hamitems {
+    display: block;
+}
+
+
+
+/* tablet media query */
+
+@media 
+only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* desktop media query */
+/* Use display inline box to rearrange different div elements */
+
+@media
+only screen and (min-width: 992px) {
+    #hamnav {
+        width: 100%;
+        background: #000;
+        position: sticky;
+        top: 0;
+      }
+
+	#hamnav label, #hamburger { 
+        display: none; 
+    }
+
+    /* Horizontal Menu Items */
+    #hamitems, #hamnav input:checked ~ #hamitems { 
+        display: flex; 
+    }
+
+    #hamitems a {
+        width: 25%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 10px;
+        color: var(--primary-color);
+        background-color: var(--overlay-color);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    #hamitems a:hover {
+        color: var(--overlay-color);
+        background-color: rgb(212, 184, 193);
+    }
+
 }
