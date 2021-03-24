@@ -5,6 +5,9 @@ html, body {
     margin: 0;
     font-family: arial, sans-serif;
 	scroll-behavior: smooth;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/dd/A_self_portrait_on_top_of_the_local_big_mountain%2C_Stol.jpg);
+	background-color: lightblue;
+	background-size: cover;
   }
 
 :root {
@@ -40,7 +43,6 @@ header > h1 {
 	margin: 0 auto;
 	margin-top: 1rem;
 	max-width: 80vw;
-	width: 100%;
 	overflow: hidden;
 	flex-direction: column;
 	align-items: left;
@@ -68,10 +70,6 @@ header > h1 {
 	text-align: center;
 	align-self: center;
 	border-radius: 5px;
-}
-
-.accordion:checked {
-	background-color:rgba(149, 90, 205, 0.95);
 }
 
 .accordion:hover {
@@ -126,23 +124,4 @@ input:required {
 
 .contactitems > li {
 	padding: 1rem;
-}
-
-
-/* tablet media query */
-
-@media 
-only screen and (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/* desktop media query */
-/* Use display inline box to rearrange different div elements */
-
-@media
-only screen and (min-width: 992px) {
-	.section.wrapper {
-		display: flex;
-		flex-direction: row;
-	}
 }

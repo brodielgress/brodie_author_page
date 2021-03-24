@@ -3,10 +3,14 @@
     --overlay-color: rgba(106, 90, 205, 0.95);
 }
 
+#hamnav {
+    border-radius: 5px;
+    background-color: var(--overlay-color);
+}
+
 /* Show hamburger icon */
 #hamnav label {
     width: 100%;
-    background: #000;
     display: inline-block;
     color: var(--primary-color);
     background: var(--overlay-color);
@@ -31,7 +35,7 @@
 /* Horizontal Menu Items */
 #hamitems { 
     display: flex;
-    border-bottom: 1px solid var(--primary-color);
+    opacity: 
 }
 
 #hamitems a {
@@ -61,49 +65,3 @@
     display: block;
 }
 
-
-
-/* tablet media query */
-
-@media 
-only screen and (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/* desktop media query */
-/* Use display inline box to rearrange different div elements */
-
-@media
-only screen and (min-width: 992px) {
-    #hamnav {
-        width: 100%;
-        background: #000;
-        position: sticky;
-        top: 0;
-      }
-
-	#hamnav label, #hamburger { 
-        display: none; 
-    }
-
-    /* Horizontal Menu Items */
-    #hamitems, #hamnav input:checked ~ #hamitems { 
-        display: flex; 
-    }
-
-    #hamitems a {
-        width: 25%;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        padding: 10px;
-        color: var(--primary-color);
-        background-color: var(--overlay-color);
-        text-decoration: none;
-        text-align: center;
-    }
-
-    #hamitems a:hover {
-        color: var(--overlay-color);
-        background-color: rgb(212, 184, 193);
-    }
-
-}
