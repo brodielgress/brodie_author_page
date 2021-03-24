@@ -4,14 +4,6 @@
 @media 
 only screen and (min-width: 768px) and (max-width: 991px) {
 
-}
-
-/* desktop media query */
-/* Use display inline box to rearrange different div elements */
-
-@media
-only screen and (min-width: 992px) {
-
     body {
 		display: flex;
         flex-direction: row;
@@ -51,5 +43,26 @@ only screen and (min-width: 992px) {
 
     .section-wrapper {
         width: 80vw;
+    }
+
+}
+
+/* desktop media query */
+/* Use display inline box to rearrange different div elements */
+
+@media
+only screen and (min-width: 992px) {
+    #hamnav {
+        display: none;
+    }
+
+    .section-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section {
+        display: flex;
+        width: 33vw;
     }
 }

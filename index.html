@@ -66,8 +66,8 @@
 		<button class="accordion">Contact</button>
 		<footer class="section" id="contact">
 			<ul class="contactitems">
-				<form name="contactform" action="/action_page.php" onsubmit="return validateName()" method="post">
-						Name: <input type="text" name="firstname" size="30" required>
+				<form name="contactform" onsubmit="return validateName(event)">
+						Name: <input type="text" name="firstname" id="firstname" size="30" required>
 					<input type="submit" value="Submit" class="btn">
 				</form>
 <!-- 
