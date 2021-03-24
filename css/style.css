@@ -41,7 +41,6 @@ header > h1 {
 	display: none;
 	flex-direction: column;
 	margin: 0 auto;
-	margin-top: 1rem;
 	max-width: 80vw;
 	overflow: hidden;
 	flex-direction: column;
@@ -49,14 +48,12 @@ header > h1 {
 	justify-content: left;
 	text-align: left;
 	border-radius: 5px;
-	margin-bottom: 5px;
 }
 
 .accordion {
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
-	margin-top: 1rem;
+	margin: .25rem auto;
 	max-width: 80vw;
 	width: 100%;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -108,7 +105,6 @@ input:required {
 	background:rgba(106, 90, 205, 0.95);
 	color: white;
 	padding: 0.75rem 1.5rem;
-	margin-top: 1rem;
 	transition: opacity 1s ease-in-out;
 	max-width: 30vw;
 	text-decoration: none;

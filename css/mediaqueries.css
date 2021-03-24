@@ -21,6 +21,7 @@ only screen and (min-width: 992px) {
         width: 20vw;
         position: sticky;
         top: 0;
+        padding-top: 10vh;
       }
 
 	#hamnav label, #hamburger { 
