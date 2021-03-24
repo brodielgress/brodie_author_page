@@ -118,6 +118,10 @@ input:required {
 	cursor: pointer;
 }
 
+.contactitems {
+	list-style:none;
+}
+
 .contactitems > li {
 	padding: 1rem;
 }

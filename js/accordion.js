@@ -1,3 +1,4 @@
+// Expands/collapses sections of the website
 let acc = document.getElementsByClassName("accordion");
 let i;
 

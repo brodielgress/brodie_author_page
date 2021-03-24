@@ -66,23 +66,26 @@
 		<button class="accordion">Contact</button>
 		<footer class="section" id="contact">
 			<ul class="contactitems">
-				<li>
-					<label for="name">Name:</label>
-					<input type="text" id="name" size="30" required>
-				</li>
-				<li>
-					<label for="email">Email:</label>
-					<input type="email" id="email" size="30" required>
-				</li>
-				<li>
-					<label for="inquiry">How can I help you?</label><br>
-						<input type="text" id="text" size="100" required>
-				</li>
-				<a href="#" class="btn">Submit</a>
+				<form name="contactform" action="/action_page.php" onsubmit="return validateName()" method="post">
+						Name: <input type="text" name="firstname" size="30" required>
+					<input type="submit" value="Submit" class="btn">
+				</form>
+<!-- 
+					<li>
+						<p>Email:</p>
+							<input type="email" name="emailaddress" size="30" required>
+					</li>
+					<li>
+						<p>How can I help you?</p>
+							<input type="text" name="inquirybox" size="50" required>
+					</li>
+
+				<br> -->
 			</ul>
 			
 		</footer>
 	</div>
-<script src="js/javascript.js"></script>
+<script src="js/accordion.js"></script>
+<script src="js/validateForm.js"></script>
 </body>
 </html>
