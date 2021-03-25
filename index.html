@@ -25,7 +25,8 @@
 			<a href="#contact">Contact</a>
 		</div>
 	</nav>
-	<div class="section-wrapper">
+<div class="section-wrapper">
+	<div class="accordion-wrapper">
 		<button class="accordion">About</button>
 		<div class="section" id="about">
 			<p>
@@ -51,6 +52,8 @@
 				Etiam dictum venenatis placerat. Praesent dapibus sollicitudin dui in bibendum. Maecenas lacinia eleifend magna, mattis scelerisque 
 				lacus euismod eu. Duis dapibus scelerisque libero sed rhoncus. </p>
 		</div>
+	</div>
+	<div class="accordion-wrapper">
 		<button class="accordion">Portfolio</button>
 		<div class="section" id="portfolio">
 			<p>
@@ -63,11 +66,14 @@
 				<br>
 			</p>
 		</div>
+	</div>
+	<div class="accordion-wrapper">
 		<button class="accordion">Contact</button>
 		<footer class="section" id="contact">
 			<ul class="contactitems">
-				<form name="contactform" onsubmit="return validateName(event)">
-						Name: <input type="text" name="firstname" id="firstname" size="30" required>
+				<form name="contactform" onsubmit="return validateName()">
+					<label for="firstname">Name:</label>
+					<input type="text" name="firstname" id="firstname" size="30">
 					<input type="submit" value="Submit" class="btn">
 				</form>
 <!-- 
@@ -85,6 +91,8 @@
 			
 		</footer>
 	</div>
+</div>
+
 <script src="js/accordion.js"></script>
 <script src="js/validateForm.js"></script>
 </body>

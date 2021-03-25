@@ -11,8 +11,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
     #hamnav {
         width: 20vw;
-        position: sticky;
-        top: 0;
         padding-top: 10vh;
       }
 
@@ -47,7 +45,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 }
 
-/* desktop media query */
+/* desktop media query
 /* Use display inline box to rearrange different div elements */
 
 @media
@@ -63,6 +61,38 @@ only screen and (min-width: 992px) {
 
     .section {
         display: flex;
+        width: 30vw;
+        margin: 0;
+        padding: 1.5vw;
+    }
+
+    .accordion-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
         width: 33vw;
     }
+
+    .accordion {
+        width: 33vw;
+        margin: 0;
+    }
+
+    .accordion:checked {
+        margin: 0;
+        width: 33vw;
+    }
+
+    .headshot {
+        display: flex;
+        width: 75%;
+        max-width: 35vw;
+        width: 90%;
+        border-radius: 5px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .section-wrapper:nth-child(1) { order: 2; }
+    
 }

@@ -6,7 +6,9 @@
 #hamnav {
     border-radius: 5px;
     background-color: var(--overlay-color);
-    margin: .25rem auto;
+    margin: auto;
+    position: sticky;
+    top: 0;
 }
 
 /* Show hamburger icon */
@@ -18,8 +20,6 @@
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2em;
     padding: 10px;
-    position: sticky;
-    top: 0;
 }
 
 /* Hide Hamburger */
