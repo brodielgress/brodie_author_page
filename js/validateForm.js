@@ -1,9 +1,9 @@
 
 // Validates the form inputs
 
-function validateName() {
-    let formval = document.getElementById("firstname").value;
-    if (formval == "") {
+function validateForms() {
+    let val = document.getElementById("firstname").value;
+    if (val == "") {
         alert("Please fill out your name.");
         return false;
     }

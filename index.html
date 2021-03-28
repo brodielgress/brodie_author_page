@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="top" lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Author Page</title>
+	<title>Brodie Gress's Author Page</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
@@ -12,20 +12,27 @@
 	<link rel="stylesheet" href="css/mediaqueries.css">
 </head>
 <body>
-	<nav id="hamnav">
-		<!-- hamburger menu -->
+<nav class="pagetop">
+	<div id="logo">
+		<a href="#top">Brodie Gress</a>
+	</div>
+
+<!-- hamburger menu -->
+	<div id="hamnav">
 		<label for="hamburger">&#9776;</label>
 		<input type="checkbox" id="hamburger">
-
-		<!-- Menu Items -->
 		<div id="hamitems">
-			<a href="#BG">BG</a>
 			<a href="#about">About</a>
 			<a href="#portfolio">Portfolio</a>
 			<a href="#contact">Contact</a>
 		</div>
-	</nav>
+	</div>
+</nav>
+
+<!-- Sections of Author Page -->
 <div class="section-wrapper">
+
+	<!-- Author Section -->
 	<div class="accordion-wrapper">
 		<button class="accordion">About</button>
 		<div class="section" id="about">
@@ -53,6 +60,8 @@
 				lacus euismod eu. Duis dapibus scelerisque libero sed rhoncus. </p>
 		</div>
 	</div>
+
+	<!-- Portfolio Section -->
 	<div class="accordion-wrapper">
 		<button class="accordion">Portfolio</button>
 		<div class="section" id="portfolio">
@@ -67,28 +76,31 @@
 			</p>
 		</div>
 	</div>
+
+	<!-- Contact Section -->
 	<div class="accordion-wrapper">
 		<button class="accordion">Contact</button>
 		<footer class="section" id="contact">
 			<ul class="contactitems">
-				<form name="contactform" onsubmit="return validateName()">
-					<label for="firstname">Name:</label>
-					<input type="text" name="firstname" id="firstname" size="30">
-					<input type="submit" value="Submit" class="btn">
+				<form name="contactform" onsubmit="return validateForms()">
+					<li>
+						<label for="firstname">Name:</label>
+						<input type="text" name="firstname" id="firstname" size="30">
+					</li>
+					<li>
+						<label for="emailaddress">Email:</label>
+						<input type="email" name="emailaddress" id="emailaddress" size="30">
+					</li>
+					<li>
+						<label for="inquirybox">How can I help you?</label>
+						<input type="text" name="inquirybox" id="inquirybox">
+					</li>
+					<br>
+					<li>
+						<input type="submit" value="Submit" class="btn">
+					</li>
 				</form>
-<!-- 
-					<li>
-						<p>Email:</p>
-							<input type="email" name="emailaddress" size="30" required>
-					</li>
-					<li>
-						<p>How can I help you?</p>
-							<input type="text" name="inquirybox" size="50" required>
-					</li>
-
-				<br> -->
 			</ul>
-			
 		</footer>
 	</div>
 </div>

@@ -1,4 +1,8 @@
 /* Create a hamburger menu for the banner element for mobile */
+:root {
+    --primary-color: rgba(230, 230, 250, 0.85);
+    --overlay-color: rgba(106, 90, 205, 0.95);
+}
 
 html, body {
     padding: 0;
@@ -109,8 +113,9 @@ input:required {
 	max-width: 30vw;
 	text-decoration: none;
 	text-align: center;
-	align-self: center;
 	border-radius: 10px;
+	margin: auto;
+	justify-self: center;
 }
 
 .btn:hover {
@@ -124,4 +129,28 @@ input:required {
 
 .contactitems > li {
 	padding: 1rem;
+}
+
+#logo, #logo a {
+	width: 100%;
+	margin: auto;
+	font-size: 3rem;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: var(--primary-color);
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+}
+
+.pagetop {
+	position: sticky;
+	top: 0;
+	background: var(--overlay-color);
+}
+
+#inquirybox {
+	width: 400px;
+	height: 100px;
+	resize: both;
+	overflow: hidden;
 }

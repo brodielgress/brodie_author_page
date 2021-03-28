@@ -5,10 +5,7 @@
 
 #hamnav {
     border-radius: 5px;
-    background-color: var(--overlay-color);
     margin: auto;
-    position: sticky;
-    top: 0;
 }
 
 /* Show hamburger icon */
@@ -16,7 +13,6 @@
     width: 100%;
     display: inline-block;
     color: var(--primary-color);
-    background: var(--overlay-color);
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2em;
     padding: 10px;
@@ -36,14 +32,13 @@
 /* Horizontal Menu Items */
 #hamitems { 
     display: flex;
-    opacity: 
 }
 
 #hamitems a {
   width: 33%;
   padding: 10px;
   color: var(--overlay-color);
-  background: var(--primary-color);
+  background-color: var(--primary-color);
   text-decoration: none;
   text-align: center;
 }
@@ -66,3 +61,6 @@
     display: block;
 }
 
+li:last-child {
+	justify-content: center;
+}
