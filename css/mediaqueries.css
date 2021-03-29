@@ -44,6 +44,16 @@ only screen and (min-width: 768px) and (max-width: 991px) {
         width: 80vw;
     }
 
+    .pagetop {
+        position: sticky;
+        top: 0;
+        background: var(--overlay-color);
+        height: 25rem;
+        padding: .25rem;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
 }
 
 /* desktop media query */
@@ -57,13 +67,17 @@ only screen and (min-width: 992px) {
     .section-wrapper {
         display: flex;
         flex-direction: row;
+        margin: 0;
     }
 
     .section {
-        display: flex;
-        width: 30vw;
+        display: none;
         margin: 0;
         padding: 1.5vw;
+    }
+
+    .accordion {
+        margin: 0;
     }
 
     .accordion-wrapper {
@@ -71,16 +85,6 @@ only screen and (min-width: 992px) {
         flex-direction: column;
         margin: 0;
         width: calc(100%/3);
-    }
-
-    .accordion {
-        width: 33vw;
-        margin: 0;
-    }
-
-    .accordion:checked {
-        margin: 0;
-        width: 33vw;
     }
 
     .headshot {

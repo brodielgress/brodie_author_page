@@ -56,8 +56,9 @@ header > h1 {
 
 .accordion {
 	display: flex;
+	margin: auto;
+	margin-top: 0;
 	flex-direction: column;
-	margin: .25rem auto;
 	max-width: 80vw;
 	width: 100%;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
