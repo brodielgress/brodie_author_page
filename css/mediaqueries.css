@@ -5,10 +5,13 @@
 only screen and (min-width: 768px) and (max-width: 991px) {
 
     body {
-		display: flex;
-        flex-direction: row;
         background: center / cover url(https://upload.wikimedia.org/wikipedia/commons/d/dd/A_self_portrait_on_top_of_the_local_big_mountain%2C_Stol.jpg);
         min-height: 100vh;
+    }
+
+    .abovefooter {
+        display: flex;
+        flex-direction: row;
     }
 
     #hamnav {

@@ -12,6 +12,7 @@ html, body {
 	background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/dd/A_self_portrait_on_top_of_the_local_big_mountain%2C_Stol.jpg);
 	background-color: lightblue;
 	background-size: cover;
+	height: 100%;
   }
 
 :root {
