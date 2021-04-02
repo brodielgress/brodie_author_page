@@ -1,4 +1,4 @@
-# Hello!
+# My Author Page
 
 I built a website featuring myself as a professional writer. I divided the website into three sections: the About section, the Portfolio section, and the Contact Form section. For this project, I concentrated mainly on designing the website's navigability and validating whether users entered text into the contact forms or not. In the future, I would like to add actual portfolio items (as live links) to the portfolio section via a carousel and validate whether the user entered in a proper email address.
 
